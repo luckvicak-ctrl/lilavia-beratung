@@ -1,0 +1,28 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lilavia Herz-Favicon">
+  <style>
+    :root{
+      --gold:#FFD700;
+      --bg:#3A1E59; /* optionaler Hintergrund, falls du eine farbige Fläche möchtest */
+    }
+  </style>
+
+  <!-- Variante A: Transparenter Hintergrund -->
+  <!-- <rect width="256" height="256" fill="none"/> -->
+
+  <!-- Variante B: Dunkle Fläche dahinter (kommentiere die Zeile oben aus und nutze diese hier) -->
+  <!-- <rect width="256" height="256" rx="36" fill="var(--bg)"/> -->
+
+  <!-- Herzform zentriert -->
+  <g transform="translate(128,128)">
+    <path d="M64 30
+             C64 13,50 4,38 10
+             C30 14,27 22,26 26
+             C25 22,22 14,14 10
+             C2 4,-12 13,-12 30
+                         C-12 46,2 63,26 81
+             C50 63,64 46,64 30 Z"
+          transform="translate(-12,-6) scale(1.9)"
+          fill="var(--gold)"/>
+  </g>
