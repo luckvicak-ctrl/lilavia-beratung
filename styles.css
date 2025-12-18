@@ -1,0 +1,74 @@
+
+/* Grunddesign für Lilavia Beratung */
+:root {
+  --lila: #7b2cbf;
+  --lila-dunkel: #5a189a;
+  --herz: #e056fd;
+  --text: #222;
+  --bg: #fff;
+  --muted: #666;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+/* Header & Navigation */
+.site-header {
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+}
+.site-header .container {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px;
+}
+.brand {
+  text-decoration: none; font-weight: 700; color: var(--lila-dunkel);
+  letter-spacing: 0.3px;
+}
+.nav a {
+  margin-left: 16px; text-decoration: none; color: var(--text);
+  padding: 8px 10px; border-radius: 6px;
+}
+.nav a:hover { background: #f0f0f0; }
+.nav .active { color: var(--lila-dunkel); font-weight: 600; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #f9f3ff, #fff);
+  padding: 64px 0;
+  text-align: center;
+}
+.hero h1 { font-size: 2.2rem; margin-bottom: 8px; color: var(--lila-dunkel); }
+.hero p { color: var(--muted); margin-bottom: 20px; }
+.btn {
+  display: inline-block; background: var(--lila); color: white; text-decoration: none;
+  padding: 10px 16px; border-radius: 8px; font-weight: 600;
+}
+.btn:hover { background: var(--lila-dunkel); }
+
+/* Cards & Grid */
+.features, .grid { display: grid; gap: 16px; }
+.features { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 32px auto; }
+.grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: 24px 0; }
+.card {
+  border: 1px solid #eee; border-radius: 12px; padding: 16px; background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.card h3 { margin-top: 0; color: var(--lila-dunkel); }
+.price { font-size: 1.1rem; font-weight: 700; color: var(--lila-dunkel); }
+
+/* Über mich */
+.profile { display: grid; grid-template-columns: 160px 1fr; gap: 16px; align-items: start; margin-top: 16px; }
+.profile img { width: 160px; height: 160px; object-fit: cover; border-radius: 12px; border: 3px solid #f0e6ff; }
+
+/* Footer */
+.site-footer { border-top: 1px solid #eee; margin-top: 40px; background: #fafafa; }
+.site-footer .container { padding: 16px; text-align: center; color: var(--muted); }
