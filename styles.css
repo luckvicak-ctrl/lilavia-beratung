@@ -89,3 +89,15 @@ a:focus {
   outline: 2px solid var(--lila);
   outline-offset: 2px;
 }
+/* HERO */
+.hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
