@@ -85,4 +85,7 @@ main.container { padding: 16px 0; }
 .calendly-inline-widget { width: 100%; min-height: 700px; }
 
 /* Bessere Fokus-Styles für Tastatur-Nutzer (Barrierefreiheit) */
-a:focus
+a:focus {
+  outline: 2px solid var(--lila);
+  outline-offset: 2px;
+}
